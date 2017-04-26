@@ -1,21 +1,99 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Site</title>
-  <%= stylesheet_link_tag    :all %>
-  <%= javascript_include_tag "writers_controller" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+* {
+  padding: 0;
+  margin: 0;
+}
 
-<%= yield %>
+nav {
+  background-color: pink;
+  height: 50px;
+  width: 2000px;
+}
 
-</body>
-</html>
+nav ul {
+ border: 1px solid red;
+ height: 50px;
+ width: 750px;
+ margin: 0 auto;
+
+
+}
+
+nav ul li {
+  list-style-type: none;
+  width: 150px;
+  float: left;
+  border-right: 1px solid gray;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  line-height: 50px;
+  display: block;
+
+}
+
+nav ul li a:hover {
+  background-color: white;
+  color: pink;
+}
+
+body {
+  background-color: lightblue;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #999;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 24px;
+}
+
+p {
+  color:maroon;
+}
+
+
+divs {
+  font-size: 40px;
+  text-align: center;
+}
+
+ul {
+  display: inline;
+}
+
+#nav {
+  width: 100%;
+  float: left;
+  margin: 0 0 3em 0;
+  padding: 0;
+  list-style: none;
+}
+#nav li {
+  float: left; }
+
+
+footer {
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 1000px;
+  height: 90px;
+  font-size: 40px;
+  background: url(http://i.imgur.com/jNQ5mg3.png);
+}
+
+body.centerbar {
+  display: center;
+}
+
+
+
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
- *
+ *s
  * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
  * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
  *

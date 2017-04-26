@@ -1,0 +1,24 @@
+<h1>Welcome#community</h1>
+<p>Find me in app/views/welcome/community.html.erb</p>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <h1>Who we are</h1>
+      <p>Here we are, a community of poets and writers</p>
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+  <ul>
+    <li><%= link_to "July" %></li>
+    <li><%= link_to "Brandy" %></li>
+    <li><%= link_to "Jeanne" %></li>
+    <li><%= link_to "next" %></li>
+    <li><%= link_to "next" %></li>
+  </ul>
+    <%= yield %>
+  </body>
+</html>

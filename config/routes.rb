@@ -1,5 +1,15 @@
 Rails.application.routes.draw do
 
+  get 'welcome/home'
+
+  get 'welcome/about_us'
+
+  get 'welcome/contact'
+
+  get 'welcome/community'
+
+  get 'welcome/index'
+
   get 'writers/new'
 
   get 'writers/create'

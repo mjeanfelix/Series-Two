@@ -1,9 +1,11 @@
-<h1>Series Q</h1>
-<p>Here we are, you know you're looking</br>
-We are a community of poets and writers.
-</p>
-
-
+<body class="centerbar">
+  <div >
+    <h1>Series Q</h1>
+      <p>Here we are, you know you're looking</br>
+      We are a community of poets and writers.
+      </p>
+  </div>
+</body>
 
 
 <h1>Sign Up</h1>
@@ -12,7 +14,7 @@ We are a community of poets and writers.
     <div class="error_messages">
       <h2>Form is invalid</h2>
       <ul>
-        <% for message in @user.errors.full_messages %>
+        <% for message in @writer.errors.full_messages %>
           <li><%= message %></li>
         <% end %>
       </ul>
@@ -36,3 +38,11 @@ We are a community of poets and writers.
   </div>
   <div class="actions"><%= f.submit %></div>
 <% end %>
+<div class="end"</div></br>
+
+
+<footer><%= link_to 'submissions' %>
+</footer>
+</div>
+
+
