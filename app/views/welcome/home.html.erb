@@ -1,2 +1,76 @@
 <h1>Welcome#home</h1>
 <p>Find me in app/views/welcome/home.html.erb</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+     <h1>Who we are</h1>
+      <p>Here we are, a community of poets and writers</p>
+    <style>
+
+    </style>
+
+    <title>Bootstrap Attempt</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+  </head>
+
+  <body>
+    <div id = "myCarousel" class = "carousel slide">
+      <ol class= "carousel-indicators">
+        <li> data-target = "#myCarousel" data-slide-to = "0" class = "active"</li>
+        <li> data-target = "#myCarousel" data-slide-to = "1"</li>
+        <li> data-target = "#myCarousel" data-slide-to = "2"</li>
+        <li> data-target = "#myCarousel" data-slide-to = "3"</li>
+        <li> data-target = "#myCarousel" data-slide-to = "4"</li>
+      </ol>
+
+        <div class= "carousel-inner">
+          slides/images
+
+        </div>
+          <div class ="item-active">
+            items
+            <img src = "http://i.imgur.com/HM0bBr8.png" alt = "Grace" class = "img-responsive">
+          </div>
+          <div class ="item">
+            items
+            <img src = "http://i.imgur.com/jNQ5mg3.png" alt = "Angel" class = "img-responsive">
+          </div>
+          <div class ="item">
+            items
+            <img src = "http://i.imgur.com/mW6JVIl.png" alt = "Blake" class = "img-responsive">
+          </div>
+          <div class ="item">
+            items
+            <img src = "http://i.imgur.com/UGR3IyG.png" alt = "Wheels" class = "img-responsive">
+          </div>
+          <div class ="item">
+            items
+            <img src = "http://i.imgur.com/ssgPpyk.png" alt = "Sphere" class = "img-responsive">
+          </div>
+    </div>
+
+
+  <ul>
+    <li><%= link_to "next" %></li>
+    <li><%= link_to "next" %></li>
+  </ul>
+    <%= yield %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
