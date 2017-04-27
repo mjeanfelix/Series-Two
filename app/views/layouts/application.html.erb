@@ -6,23 +6,30 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </head>
 
   <body>
-<nav>
-  <ul>
-      <li><%= link_to "Home", welcome_home_path %></li>
-      <li><%= link_to "Community", welcome_community_path %></li>
-      <li><%= link_to "About Us", welcome_about_us_path %></li>
-      <li><%= link_to "Contact", welcome_contact_path %></li>
-      <li><%= link_to "Index", welcome_index_path %></li>
-  </ul>
-</nav>
+    <nav>
+      <ul>
+          <li><%= link_to "Home", welcome_home_path %></li>
+          <li><%= link_to "Community", welcome_community_path %></li>
+          <li><%= link_to "About Us", welcome_about_us_path %></li>
+          <li><%= link_to "Contact", welcome_contact_path %></li>
+          <li><%= link_to "Index", welcome_index_path %></li>
+      </ul>
+    </nav>
 
- <p class"sassy"> Hi Felicia! Yes it's another one of <em>those</em> sites</p>
-  <p>
-    <%= link_to 'Reset Sign Up', new_writer_path %>
-  </p>
+    <p class"sassy">
+      Hi Felicia! Yes it's another one of <em>those</em> sites
+    </p>
+    <p>
+      <%= link_to 'Reset Sign Up', new_writer_path %>
+    </p>
 
     <%= yield %>
   </body>
