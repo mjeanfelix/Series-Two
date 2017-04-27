@@ -1,5 +1,6 @@
 class WelcomeController < ApplicationController
   def home
+    @home = Home.new
   end
 
   def about_us
@@ -12,5 +13,7 @@ class WelcomeController < ApplicationController
   end
 
   def index
+    @index = Submissions.new
+
   end
 end
