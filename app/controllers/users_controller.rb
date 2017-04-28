@@ -7,4 +7,9 @@ class UsersController < ApplicationController
       session[:user_id] = @user.id
       flash[:notice] = "You have successfully signed up!"
       redirect_to root_path
-      ...
+    else
+      render :new
+    end
+  end
+
+end

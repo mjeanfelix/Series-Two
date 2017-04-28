@@ -1,5 +1,4 @@
-  <h1>Community</h1>
-<p>Find me in app/views/welcome/community.html.erb</p>
+<h1>Community</h1>
 
 <!DOCTYPE html>
 <html>
@@ -7,7 +6,12 @@
     <h1>Who we are</h1>
       <p>Here we are, a community of poets and writers</p>
     <style>
-
+      img {
+        border-radius: 8px;
+        display: block;
+        margin: auto;
+        width: 50%;
+      }
 
       /* Email styles need to be inline */
     </style>
@@ -15,16 +19,11 @@
   <body style="background-color:powderblue">
 
 
-
 <% @writers.each do |writer| %>
   <h2><%= writer.name %></h2>
   <img src="<%= writer.image_url %>">
 
-
-
 <% end %>
-
-
 
 
 <h2>July Westhale</h2>
@@ -85,14 +84,13 @@ not until she opens it, sniffs, proclaims,
   <img src="http://i.imgur.com/oQhVJ3om.jpg">
   <p>bio</p>
   <p>Studied at University of Washington Bothell
-Past: Massachusetts Institute of Technology (MIT) and Rutgers Preparatory School</p>
+and Massachusetts Institute of Technology (MIT) and Rutgers Preparatory School</p>
   <p>sample</p>
   <%= link_to "Aimee (http://aimeecharrison.com)" %>
 
 
 <h2>Keith Jay</h2>
   <img src="http://i.imgur.com/HdadtH6.jpg">
-  <img src="http://2.bp.blogspot.com/-oA4H0UtfE0E/T0Ztlrh7dvI/AAAAAAAAALI/rLChKv__1ug/s150/iphone%2B175a.jpg">
   <p>Keith Jarrett, poet not pianist. Living and working in London, as a spoken word artist and educator... also working on a first novel.
 
 Former London and UK Poetry Slam! champ, and short story stringer-togetherer. I've set up poetry workshops for schools and taught Spanish. Now one of six Spoken Word Educator trainees teaching at a secondary school in East London and studying at Goldsmiths; the project is the first of its kind in Europe. For more information, please get in touch!</p>

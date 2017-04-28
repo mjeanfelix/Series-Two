@@ -19,7 +19,6 @@ Rails.application.routes.draw do
   # we only want to display a sign up page and create users
   resources :sessions, only: [:new, :create, :destroy]
   resources :writers, only: [:new, :create, :edit, :update]
-  resources :users, only: [:new, :create]
   get '/login', to: 'sessions#new'
   get '/logout', to: 'sessions#destroy'
 end
