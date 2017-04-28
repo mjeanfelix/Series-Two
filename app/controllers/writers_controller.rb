@@ -1,6 +1,5 @@
 class WritersController < ApplicationController
   def new
-
     @writer = Writer.new
   end
 

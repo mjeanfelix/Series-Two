@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SeriesTwo</title>
+    <title>SeriesQ</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -27,9 +27,17 @@
     <p class"sassy">
       Hi Felicia! Yes it's another one of <em>those</em> sites
     </p>
-    <p>
-      <%= link_to 'Reset Sign Up', new_writer_path %>
-    </p>
+<p>
+  <% if current_user %>
+    Welcome, <%= current_user.name %>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    <%= link_to 'Log Out', session_path('dummy'), method: :delete %>
+  <% else %>
+    <%= link_to 'Log In', login_path %>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    <%= link_to 'Sign Up', new_user_path %>
+  <% end %>
+</p>
 
     <%= yield %>
   </body>

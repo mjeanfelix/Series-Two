@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170425221051) do
+ActiveRecord::Schema.define(version: 20170427232136) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(version: 20170425221051) do
     t.string   "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "writer_id"
+    t.index ["writer_id"], name: "index_samples_on_writer_id", using: :btree
   end
 
   create_table "writers", force: :cascade do |t|
@@ -27,9 +29,14 @@ ActiveRecord::Schema.define(version: 20170425221051) do
     t.string   "genre"
     t.string   "education"
     t.string   "storefront_link"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.datetime "created_at",                                                  null: false
+    t.datetime "updated_at",                                                  null: false
     t.string   "password_digest"
+    t.boolean  "approved",        default: false
+    t.string   "image_url",       default: "http://i.imgur.com/k55EBCZh.png"
+    t.text     "bio"
+    t.boolean  "is_admin",        default: false
   end
 
+  add_foreign_key "samples", "writers"
 end
