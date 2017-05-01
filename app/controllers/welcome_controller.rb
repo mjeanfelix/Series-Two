@@ -22,17 +22,5 @@ class WelcomeController < ApplicationController
     redirect_to @name
   end
 
-  def email
-  end
-
-  def bio
-  end
-
-  def education
-  end
-
-  def submission
-  end
-
 
 end
