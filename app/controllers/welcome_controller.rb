@@ -15,6 +15,9 @@ class WelcomeController < ApplicationController
   def index
   end
 
+  def donations
+  end
+
   def create
     @name = Name.new(params[:name])
 

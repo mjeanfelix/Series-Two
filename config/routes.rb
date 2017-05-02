@@ -14,6 +14,8 @@ Rails.application.routes.draw do
 
   get 'writers/create'
 
+  get 'welcome/donations'
+
   root 'writers#index'
   resources :samples, only: [:new, :create, :destroy]
   # we only want to display a sign up page and create users
